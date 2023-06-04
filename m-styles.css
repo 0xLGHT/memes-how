@@ -1,0 +1,101 @@
+/* styles.css */
+body {
+    background-color: #fafafa;
+    font-family: 'SF UI Text', sans-serif;
+    padding-bottom: 5%;
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    margin-top: 5vh;
+}
+
+.logo {
+    margin-right: auto;
+    height: 80%;
+}
+
+.info-pill {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0.75px solid #000;
+    border-radius: 50px;
+    padding: 1vh;
+    margin-left: auto;
+    min-width: 20vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info-pill span {
+    margin: 0 15px;
+}
+
+.info-pill p span {
+    margin: 0 10px;
+    font-size: 0.5vw;
+}
+
+.content-section {
+    text-align: left;
+    margin-top: 50px;
+    width: 100%;
+}
+
+h1 {
+    color: #adadad;
+    font-weight: bold;
+}
+
+p, #hyperlinks-a {
+    color: #adadad;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+p a {
+    color: #adadad;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #000;
+}
+
+p, #hyperlinks-a:hover {
+    color: #000;
+}
+
+@media screen and (max-width: 724px) {
+    .info-pill {
+        display: none;
+    }
+    h1 {
+        font-size: medium;
+    }
+    p a {
+        font-size: small;
+    }
+}
+
+/* Set a maximum font size for wide screens */
+@media screen and (min-width: 1200px) {
+    .info-pill p span {
+        font-size: 24px;
+    }
+}
