@@ -1,4 +1,32 @@
 /* styles.css */
+@font-face {
+    font-family: 'SF UI Text' ;
+    src: url(Font/SF-UI-Font/SFUIText-Light.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text' ;
+    src: url(Font/SF-UI-Font/SFUIText-Semibold.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text' ;
+    src: url(Font/SF-UI-Font/SFUIText-LightItalic.otf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF UI Text' ;
+    src: url(Font/SF-UI-Font/SFUIText-SemiboldItalic.otf);
+    font-weight: bold;
+    font-style: italic;
+}
+
 body {
     background-color: #fafafa;
     font-family: 'SF UI Text', sans-serif;
@@ -57,17 +85,20 @@ body {
 }
 
 h1 {
+    font-family: 'SF UI Text', sans-serif;
     color: #adadad;
     font-weight: bold;
 }
 
 p, #hyperlinks-a {
+    font-family: 'SF UI Text', sans-serif;
     color: #adadad;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 p a {
+    font-family: 'SF UI Text', sans-serif;
     color: #adadad;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -81,14 +112,49 @@ p, #hyperlinks-a:hover {
     color: #000;
 }
 
+#p-img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black;
+    box-sizing: border-box;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.wallet-button {
+    margin-top: 9%;
+    font-family: 'SF UI Text', sans-serif;
+    text-decoration: none;
+    font-size: 12px;
+    padding: 12px 28px;
+    border: 0.5px solid #adadad;
+    border-radius: 50px;
+    background-color: #fafafa;
+    color: #adadad;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.wallet-button:hover {
+    color: #000;
+}
+
 @media screen and (max-width: 724px) {
     .info-pill {
         display: none;
     }
     h1 {
+        font-family: 'SF UI Text', sans-serif;
         font-size: medium;
     }
     p a {
+        font-family: 'SF UI Text', sans-serif;
         font-size: small;
     }
 }

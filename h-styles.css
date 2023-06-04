@@ -1,4 +1,32 @@
 /* styles.css */
+@font-face {
+    font-family: 'SF UI Text' ;
+    src: url(Font/SF-UI-Font/SFUIText-Light.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text' ;
+    src: url(Font/SF-UI-Font/SFUIText-Semibold.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text' ;
+    src: url(Font/SF-UI-Font/SFUIText-LightItalic.otf);
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF UI Text' ;
+    src: url(Font/SF-UI-Font/SFUIText-SemiboldItalic.otf);
+    font-weight: bold;
+    font-style: italic;
+}
+
 body {
     background-color: #fafafa;
     font-family: 'SF UI Text', sans-serif;
@@ -57,17 +85,20 @@ body {
 }
 
 h1 {
+    font-family: 'SF UI Text', sans-serif;
     color: #000000;
     font-weight: bold;
 }
 
 p, #hyperlinks-a {
+    font-family: 'SF UI Text', sans-serif;
     color: #adadad;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 p a {
+    font-family: 'SF UI Text', sans-serif;
     color: #adadad;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -86,9 +117,11 @@ p, #hyperlinks-a:hover {
         display: none;
     }
     h1 {
+        font-family: 'SF UI Text', sans-serif;
         font-size: medium;
     }
     p a {
+        font-family: 'SF UI Text', sans-serif;
         font-size: small;
     }
 }
