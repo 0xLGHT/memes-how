@@ -84,7 +84,7 @@ body {
     width: 100%;
 }
 
-h1 {
+h1, h2, h3 {
     font-family: 'SF UI Text', sans-serif;
     color: #adadad;
     font-weight: bold;
