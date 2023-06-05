@@ -158,6 +158,13 @@ p, #hyperlinks-a:hover {
         font-family: 'SF UI Text', sans-serif;
         font-size: small;
     }
+    .center-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 /* Set a maximum font size for wide screens */
