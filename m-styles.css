@@ -33,6 +33,7 @@ body {
     padding-bottom: 5%;
 }
 
+
 .center-container {
     display: flex;
     flex-direction: column;
@@ -84,7 +85,7 @@ body {
     width: 100%;
 }
 
-h1, h2, h3 {
+h1 {
     font-family: 'SF UI Text', sans-serif;
     color: #adadad;
     font-weight: bold;
