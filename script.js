@@ -10,9 +10,10 @@ async function fetchCryptoPrices() {
 
 // Fetches the current Gwei price for Ethereum gas
 async function fetchGweiPrice() {
-    const response = await fetch('https://ethgasstation.info/api/ethgasAPI.json');
+    const response = await fetch('https://api.blocknative.com/gasprices/blockprices');
     const data = await response.json();
-    document.getElementById('gwei').textContent = `GWEI: ${data.average / 10}`;
+    const gweiPrice = data.blockPrices[0].estimatedPrices[0].price;
+    document.getElementById('gwei').textContent = `GWEI: ${gweiPrice}`;
 }
 
 // Gets the current UTC time in military format
